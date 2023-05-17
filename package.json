@@ -6,15 +6,13 @@
   "scripts": {
     "ng": "ng",
     "start": "node dist/app/server/main.js",
-    "build": "ng build --prod",
+    "build": "ng build --prod && ng run app:server:production",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev:ssr": "ng run app:serve-ssr",
     "serve:ssr": "node dist/app/server/main.js",
-    "build:ssr": "ng build --prod && ng run app:server:production",
-    "prerender": "ng run app:prerender",
-    "postinstall": "npm run build"
+    "build:ssr": "ng build --prod && ng run app:server:production"
   },
   "private": true,
   "dependencies": {
